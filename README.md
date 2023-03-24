@@ -16,7 +16,7 @@
 ✅[Teste Mock](https://github.com/igu1nho/teste_aula7)
 
 ## Sobre o Código:
-O código realiza testes mock, baseando nos professores do Inatel
+O código realiza testes mock, baseando nos professores do Inatel. Porém por um erro houve buscas de professores de outras instituições não cadastrados no sistema.
 
 ## Colaborador(es):
 <table>
