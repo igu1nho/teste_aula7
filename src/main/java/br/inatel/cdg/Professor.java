@@ -1,22 +1,22 @@
 package br.inatel.cdg;
 
-import com.google.gson.JsonObject;
-
 public class Professor {
 
     private String nome;
     private String h_atendimento; //qtdvida
     private String periodo; //arma
     private int sala;
-    private int predio;
+    private String[] predio;
 
-    public Professor (String nome, String h_atendimento, String periodo, int sala, int predio){
+
+    public Professor(String nome, String h_atendimento, String periodo, int sala, String[] predio) {
         this.nome = nome;
         this.h_atendimento = h_atendimento;
         this.periodo = periodo;
         this.sala = sala;
         this.predio = predio;
     }
+
     public String getNome() {
         return nome;
     }
@@ -49,11 +49,11 @@ public class Professor {
         this.sala = sala;
     }
 
-    public int getPredio() {
+    public String[] getPredio() {
         return predio;
     }
 
-    public void setPredio(int predio) {
+    public void setPredio(String[] predio) {
         this.predio = predio;
     }
 }
