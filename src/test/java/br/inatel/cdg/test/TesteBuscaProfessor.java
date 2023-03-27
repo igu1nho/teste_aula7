@@ -32,7 +32,7 @@ public class TesteBuscaProfessor {
         assertEquals("sexta-feira, as 17:30", chris.getH_atendimento());
         assertEquals("noturno", chris.getPeriodo());
         assertEquals(18, chris.getSala());
-        assertEquals(4, chris.getPredio());
+        assertEquals("4, ", chris.getPredio()[0]);
 
     }
 
@@ -48,7 +48,7 @@ public class TesteBuscaProfessor {
         assertEquals("quarta-feira, as 17:30", vitor.getH_atendimento());
         assertEquals("noturno", vitor.getPeriodo());
         assertEquals(22, vitor.getSala());
-        assertEquals(6, vitor.getPredio());
+        assertEquals("6, ", vitor.getPredio()[0]);
 
     }
 
@@ -64,7 +64,7 @@ public class TesteBuscaProfessor {
         assertEquals("segunda-feira, as 13:30", renan.getH_atendimento());
         assertEquals("integral", renan.getPeriodo());
         assertEquals(15, renan.getSala());
-        assertEquals(3, renan.getPredio());
+        assertEquals("3, ", renan.getPredio()[0]);
 
     }
 
@@ -80,7 +80,7 @@ public class TesteBuscaProfessor {
         assertEquals("quarta-feira, as 17:30", renzo.getH_atendimento());
         assertEquals("noturno", renzo.getPeriodo());
         assertEquals(18, renzo.getSala());
-        assertEquals(4, renzo.getPredio());
+        assertEquals("4, ", renzo.getPredio()[0]);
 
     }
 
@@ -96,7 +96,7 @@ public class TesteBuscaProfessor {
         assertEquals("terca-feira, as 19:30", marcelo.getH_atendimento());
         assertEquals("noturno", marcelo.getPeriodo());
         assertEquals(19, marcelo.getSala());
-        assertEquals(4, marcelo.getPredio());
+        assertEquals("4, ", marcelo.getPredio()[0]);
 
     }
 
@@ -112,7 +112,7 @@ public class TesteBuscaProfessor {
         assertEquals("quinta-feira, as 10:00", leandro.getH_atendimento());
         assertEquals("integral", leandro.getPeriodo());
         assertEquals(3, leandro.getSala());
-        assertEquals(1, leandro.getPredio());
+        assertEquals("1, ", leandro.getPredio()[0]);
 
     }
 
@@ -128,7 +128,7 @@ public class TesteBuscaProfessor {
         assertEquals("segunda-feira, as 19:30", soned.getH_atendimento());
         assertEquals("noturno", soned.getPeriodo());
         assertEquals(14, soned.getSala());
-        assertEquals(3, soned.getPredio());
+        assertEquals("3, ", soned.getPredio()[0]);
 
     }
 
@@ -144,7 +144,7 @@ public class TesteBuscaProfessor {
         assertEquals("sexta-feira, as 8:00", bruno.getH_atendimento());
         assertEquals("integral", bruno.getPeriodo());
         assertEquals(3, bruno.getSala());
-        assertEquals(1, bruno.getPredio());
+        assertEquals("1, ", bruno.getPredio()[0]);
 
     }
 
@@ -160,7 +160,7 @@ public class TesteBuscaProfessor {
         assertEquals("terca-feira, as 17:30", luis.getH_atendimento());
         assertEquals("noturno", luis.getPeriodo());
         assertEquals(7, luis.getSala());
-        assertEquals(2, luis.getPredio());
+        assertEquals("2, ", luis.getPredio()[0]);
 
     }
 
@@ -176,7 +176,7 @@ public class TesteBuscaProfessor {
         assertEquals("quinta-feira, as 10:00", igor.getH_atendimento());
         assertEquals("integral", igor.getPeriodo());
         assertEquals(10, igor.getSala());
-        assertEquals(2, igor.getPredio());
+        assertEquals("2, ", igor.getPredio()[0]);
     }
 
     //Ao tentar implementar o banco, o estágiario acabou misturando os bancos do Inatel, com a GamersClub
@@ -191,7 +191,6 @@ public class TesteBuscaProfessor {
         assertFalse(professorValido);
     }
 
-
     //Falha 2
     @Test
     public void testeBuscaProfessorFallen(){
@@ -204,7 +203,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", fallen.getH_atendimento());
         assertEquals("Inexistente", fallen.getPeriodo());
         assertEquals(0, fallen.getSala());
-        assertEquals(0, fallen.getPredio());
+        assertEquals("Inexistente", fallen.getPredio()[0]);
 
     }
 
@@ -220,7 +219,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", coldzera.getH_atendimento());
         assertEquals("Inexistente", coldzera.getPeriodo());
         assertEquals(0, coldzera.getSala());
-        assertEquals(0, coldzera.getPredio());
+        assertEquals("Inexistente", coldzera.getPredio()[0]);
 
     }
 
@@ -236,7 +235,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", fer.getH_atendimento());
         assertEquals("Inexistente", fer.getPeriodo());
         assertEquals(0, fer.getSala());
-        assertEquals(0, fer.getPredio());
+        assertEquals("Inexistente", fer.getPredio()[0]);
 
     }
 
@@ -252,7 +251,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", taco.getH_atendimento());
         assertEquals("Inexistente", taco.getPeriodo());
         assertEquals(0, taco.getSala());
-        assertEquals(0, taco.getPredio());
+        assertEquals("Inexistente", taco.getPredio()[0]);
 
     }
     //Falha 6
@@ -267,7 +266,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", fnx.getH_atendimento());
         assertEquals("Inexistente", fnx.getPeriodo());
         assertEquals(0, fnx.getSala());
-        assertEquals(0, fnx.getPredio());
+        assertEquals("Inexistente", fnx.getPredio()[0]);
 
     }
 
@@ -283,7 +282,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", felps.getH_atendimento());
         assertEquals("Inexistente", felps.getPeriodo());
         assertEquals(0, felps.getSala());
-        assertEquals(0, felps.getPredio());
+        assertEquals("Inexistente", felps.getPredio()[0]);
 
     }
 
@@ -299,7 +298,7 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", hen1.getH_atendimento());
         assertEquals("Inexistente", hen1.getPeriodo());
         assertEquals(0, hen1.getSala());
-        assertEquals(0, hen1.getPredio());
+        assertEquals("Inexistente", hen1.getPredio()[0]);
 
     }
 
@@ -312,10 +311,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Inexistente", lucas.getNome());
-        assertEquals("Inexistente", lucas .getH_atendimento());
-        assertEquals("Inexistente", lucas .getPeriodo());
-        assertEquals(0, lucas .getSala());
-        assertEquals(0, lucas .getPredio());
+        assertEquals("Inexistente", lucas.getH_atendimento());
+        assertEquals("Inexistente", lucas.getPeriodo());
+        assertEquals(0, lucas.getSala());
+        assertEquals("Inexistente", lucas.getPredio()[0]);
 
     }
 
@@ -331,7 +330,8 @@ public class TesteBuscaProfessor {
         assertEquals("Inexistente", steel.getH_atendimento());
         assertEquals("Inexistente", steel.getPeriodo());
         assertEquals(0, steel.getSala());
-        assertEquals(0, steel.getPredio());
+        assertEquals("Inexistente", steel.getPredio()[0]);
 
         }
+
 }
